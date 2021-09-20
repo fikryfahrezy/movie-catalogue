@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+    <string name="title_activity_scrolling">Scrolling Activity</string>
+    <string name="action_settings">Settings Action</string>
+    <string name="title_activity_test">MainActivity</string>
+    <string name="title_movie">Movies</string>
+    <string name="title_shows">TV Shows</string>
+    <string name="title_show">TV Show</string>
+    <string name="title_bookmarked">Bookmarked</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="overview_label">Overview</string>
+    <string name="original_title_label">Original Title</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_year">(2020)</string>
+    <string name="movie_rating">PG-13</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="movie_genres">Action, Adventure, Fantasy</string>
+    <string name="movie_duration">1h 22m</string>
+    <string name="original_title">Original Title</string>
+    <string name="movie_tagLine">Movie Tagline</string>
+    <string name="movie_overview">
+        After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only "meta-human" who was created in the wake of the accelerator explosion — and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won\'t be long before the world learns what Barry Allen has become…The Flash.
+    </string>
+    <string name="production_countries_label">Production Countries</string>
+    <string name="production_countries">Production Countries</string>
+    <string name="status_label">Status</string>
+    <string name="movie_status">Aired</string>
+    <string name="language_label">Language</string>
+    <string name="movie_Language">English</string>
+    <string name="companies_label">Companies</string>
+    <string name="company_name">Company Name</string>
+    <string name="share_button">Share Button</string>
+    <string name="server_error">Server Error</string>
+    <string name="no_detail">This item doesn\'t have detail yet</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+    <string name="search_hint">Find here …</string>
+    <string name="warning_empty">Input Field Cannot Empty</string>
+    <string name="sort_button">Sort Button</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="bookmarked">Bookmarked</string>
+    <string name="message_undo">Undo?</string>
+    <string name="message_ok">OK</string>
+</resources>

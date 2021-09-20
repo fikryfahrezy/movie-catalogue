@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_movie"
+        android:icon="@drawable/ic_baseline_movie_24"
+        android:title="@string/title_movie" />
+
+    <item
+        android:id="@+id/navigation_show"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+        android:title="@string/title_shows" />
+
+    <item
+        android:id="@+id/navigation_bookmarked"
+        android:icon="@drawable/ic_baseline_bookmark_black_24"
+        android:title="@string/title_bookmarked" />
+
+</menu>

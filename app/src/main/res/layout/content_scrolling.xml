@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.detail.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_title"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/movieYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_year"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/movieTitle"
+            app:layout_constraintTop_toBottomOf="@id/movieTitle" />
+
+        <TextView
+            android:id="@+id/movieDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/movie_duration"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/movieYear"
+            app:layout_constraintStart_toEndOf="@id/movieYear" />
+
+        <TextView
+            android:id="@+id/movieGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_genres"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/movieYear"
+            app:layout_constraintTop_toBottomOf="@id/movieYear" />
+
+        <Button
+            android:id="@+id/bookmarkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:drawableLeft="@drawable/ic_baseline_bookmark_border_24"
+            android:text="@string/bookmark"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/movieGenre"
+            app:layout_constraintTop_toBottomOf="@id/movieGenre" />
+
+        <TextView
+            android:id="@+id/originalTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/original_title_label"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/bookmarkButton"
+            app:layout_constraintTop_toBottomOf="@id/bookmarkButton" />
+
+        <TextView
+            android:id="@+id/movieOriginalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/original_title"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/originalTitleLabel"
+            app:layout_constraintTop_toBottomOf="@id/originalTitleLabel" />
+
+        <TextView
+            android:id="@+id/movieTagLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_tagLine"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@id/movieOriginalTitle"
+            app:layout_constraintTop_toBottomOf="@id/movieOriginalTitle" />
+
+        <TextView
+            android:id="@+id/overviewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/overview_label"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/movieTagLine"
+            app:layout_constraintTop_toBottomOf="@id/movieTagLine" />
+
+        <TextView
+            android:id="@+id/movieOverview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_overview"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/overviewLabel"
+            app:layout_constraintTop_toBottomOf="@id/overviewLabel" />
+
+        <TextView
+            android:id="@+id/productionCountriesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/production_countries_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/movieOverview"
+            app:layout_constraintTop_toBottomOf="@id/movieOverview" />
+
+        <TextView
+            android:id="@+id/movieProductionCountries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/production_countries"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/productionCountriesLabel"
+            app:layout_constraintTop_toBottomOf="@id/productionCountriesLabel" />
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/status_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/movieProductionCountries"
+            app:layout_constraintTop_toBottomOf="@id/movieProductionCountries" />
+
+        <TextView
+            android:id="@+id/movieStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_status"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/statusLabel"
+            app:layout_constraintTop_toBottomOf="@id/statusLabel" />
+
+        <TextView
+            android:id="@+id/languageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/language_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/movieStatus"
+            app:layout_constraintTop_toBottomOf="@id/movieStatus" />
+
+        <TextView
+            android:id="@+id/movieLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_Language"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/languageLabel"
+            app:layout_constraintTop_toBottomOf="@id/languageLabel" />
+
+        <TextView
+            android:id="@+id/companiesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/companies_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/movieLanguage"
+            app:layout_constraintTop_toBottomOf="@id/movieLanguage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCompanies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/companiesLabel"
+            app:layout_constraintTop_toBottomOf="@id/companiesLabel"
+            tools:listitem="@layout/item_cast" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
